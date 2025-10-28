@@ -19,9 +19,9 @@ export const CocktailCard = ({ cocktail, onClick }: CocktailCardProps) => {
           className="w-full h-full object-cover"
         />
       </div>
-      <CardContent className="p-4">
-        <h3 className="text-lg font-bold mb-2 text-foreground">{cocktail.name}</h3>
-        <p className="text-sm text-muted-foreground">{cocktail.ingredients}</p>
+      <CardContent className="p-3">
+        <h3 className="text-sm font-bold mb-1 text-foreground line-clamp-2">{cocktail.name}</h3>
+        <p className="text-xs text-muted-foreground line-clamp-2">{cocktail.ingredients}</p>
       </CardContent>
     </Card>
   );
