@@ -17,7 +17,7 @@ export const CocktailDetail = ({ cocktail, open, onOpenChange }: CocktailDetailP
 
   return (
     <Dialog open={open} onOpenChange={onOpenChange}>
-      <DialogContent className="max-w-2xl max-h-[85vh] overflow-y-auto mx-4 rounded-2xl sm:mx-auto">
+      <DialogContent className="max-w-2xl w-[calc(100%-2rem)] sm:w-full">
         <DialogHeader className="space-y-2">
           <DialogTitle className="text-2xl font-bold">{cocktail.name}</DialogTitle>
         </DialogHeader>
